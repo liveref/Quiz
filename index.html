@@ -98,7 +98,7 @@
 <div id="app">
   <header>
     <div>
-      <h1 id="header-title">교재 비전 문제 생성기</h1>
+      <h1 id="header-title">교재 문장 문제 생성기</h1>
       <p id="header-sub">교재 캡처 이미지나 PDF를 올리면 바로 문제를 만들어드려요</p>
     </div>
     <button class="settings-btn" onclick="setView('settings')" title="설정">⚙️</button>
@@ -257,7 +257,7 @@ async function fetchOneQuestion(){
   }
 
   // 시스템 및 프롬프트 명령 강화 (전체 범위 랜덤 탐색 유도)
-  const systemInstruction = "당신은 한국어 자격시험 출제 전문가입니다. 첨부된 문서의 특정 부분(앞부분 등)에만 치우치지 않고, 문서 '전체 범위'를 무작위로 탐색하여 다양한 개념을 골고루 출제해야 합니다.";
+  const systemInstruction = "당신은 AI프롬프트 활용능력 1급 자격시험 출제 전문가입니다. 첨부된 문서의 특정 부분(앞부분 등)에만 치우치지 않고, 문서 '전체 범위'를 무작위로 탐색하여 다양한 개념을 골고루 출제해야 합니다.";
   
   // 선택지를 '일반 문장 형태'로 작성하도록 수정
   const prompt = `첨부된 자료 전체를 골고루 분석하여 4지선다 문제를 1개 만들어주세요. 매번 문서의 무작위 위치에서 새로운 핵심 내용을 골라야 합니다.\n` +
